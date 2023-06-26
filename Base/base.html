@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Home</title>
+
+     <!--Angular.min.js -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <link rel="stylesheet" href="css/home.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp">
+    <!--MENU-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="image/logo.png" alt=""></a>
+        </div>
+        <ul class="main-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Calligraphy</a></li>
+            <li><a href="">Categories</a>
+                <ul class="sub-menu">
+                    <li><a href="">Arabic</a></li>
+                    <li><a href="">East Asian</a></li>
+                    <li><a href="">Greek</a></li>
+                    <li><a href="">Indic</a></li>
+                    <li><a href="">Western</a></li>
+                </ul>
+            <li><a href="">Learn</a>
+                <ul class="sub-menu">
+                    <li><a href="">Basic</a></li>
+                    <li><a href="">Intermediate</a></li>
+                    <li><a href="">Advanced</a></li>
+                </ul>
+            </li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!--SECTION-->
+    <section>
+        <p>Nhét phần thân vào đây</p>
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <p class="start-footer">QUICK CALLIGRAPHY</p>
+        <div class="main-container1">
+            <ul class="sub-container">
+                <li><a href="">About</a></li>
+                <li><a href="">Calligraphy</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+
+            <ul class="sub-container">
+                <li><a href="">Learn <span>&#9900;</span> Basic</a></li>
+                <li><a href="">Learn <span>&#9900;</span> Intermediate</a></li>
+                <li><a href="">Learn <span>&#9900;</span> Advanced</a></li>
+            </ul>
+
+            <div class="form-container">
+                <form action="" name="subscribe">
+                    <label for="">Get the freshest Quick Calligraphy news</label><br/>
+                    <div class="sub-form-container">
+                    <input type="email" name="mailid" ng-model="mMailid" ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/"
+                    ng-trim="false" placeholder="Your email here">
+                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                    </div>
+                    <div class="error-container">
+                        <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="icon-container">
+            <a href="https://www.facebook.com/">
+                <img src="image/icon-facebook.png" alt="" onmouseover="this.src='image/icon-facebook-hover.png'"
+                    onmouseout="this.src='image/icon-facebook.png'">
+            </a>
+
+            <a href="https://twitter.com/">
+                <img src="image/icon-twitter.png" alt="" onmouseover="this.src='image/icon-twitter-hover.png'"
+                    onmouseout="this.src='image/icon-twitter.png'">
+            </a>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+                <img src="image/icon-googleplus.png" alt="" onmouseover="this.src='image/icon-googleplus-hover.png'"
+                    onmouseout="this.src='image/icon-googleplus.png'">
+            </a>
+        </div>
+        <hr>
+
+        <div class="main-container2">
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Feedback</a>
+        </div>
+
+        <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+    </footer>
+</body>
+<script>
+    let myApp = angular.module("myApp", []);
+</script>
