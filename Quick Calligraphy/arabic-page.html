@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Arabic Calligraphy</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Aos.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="home.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="#">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid start">
+
+        <!--CONTENT-->
+        <div class="row d-flex align-items-center d-flex justify-content-center">
+            <!--content-left-->
+            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
+                data-aos="fade-right">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/arabic-page/arabic-calligraphy-2.png" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>THE HISTORY OF ARABIC CALLIGRAPHY</h2>
+
+                            <p>Arabic calligraphy is the artistic practice of handwriting and calligraphy based on the
+                                Arabic alphabet. It is known in Arabic as khatt (Arabic: خط), derived from the word
+                                'line', 'design', or 'construction'. Kufic is the oldest form of the Arabic script.</p>
+
+                            <p>The exact origins of the Arabic manuscript are widely debated, whether it stems from
+                                writing in the early languages of Aramaic, Nabatean, or Syriac. The first use of the
+                                actual writing can be traced to the 6th century mostly preserved from papyrus in Egypt.
+                                The manuscript was originally developed for the purpose of communicating ideas and
+                                theories across the Arab world and far and wide Islamic civilizations. A large amount of
+                                what is preserved is graffiti from the Arab World or coins or engravings. However, the
+                                script was not widely used because of the common tradition to pass down stories orally.
+                            </p>
+
+                            <p>The development of the actual art of calligraphy dates back to the 7th century, where the
+                                deep devotion to the words of the Quran were translated into a beautiful transcription.
+                                There are strong ties to Islam given the common belief that the most pure and original
+                                form of Arabic (FusHa/فصح) comes from the Quran. After the spread of Islam, calligraphy
+                                was used to preserve the Quran in written form. Consequently, scholars argue the title
+                                “Islamic Calligraphy” is more appropriate than “Arabic Calligraphy” considering its
+                                deep-seated roots to religion and development in Persia, Turkey, and other
+                                non-Arabic-speaking regions.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--content-right-->
+            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
+                data-aos="fade-left">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>ARABIC ALPHABET</h2>
+
+                            <p>The Arabic Alphabet consists of 29 consonants
+                                and 11 vocalization marks in the shape of accents. The basic structure
+                                of the alphabet can be found in only 19 basic shapes. But since the
+                                letters change their shape according to their position in the word
+                                (initial, medial, final or isolated) then the set of glyphs will add up
+                                to 106 (since 23 letters have 4 alternative shapes and 7 letters have 2
+                                alternative shapes). If we add the 2 indispensable ligatures of Lam
+                                Alef then the number will be 108. Finally, since the Arabic alphabet is
+                                also used in some non-Arab languages, more alterations to the letter
+                                were made to represent all the added non-Arabic phonetics which leaves
+                                the number of glyphs at 130. Moreover, the number of glyphs can
+                                increase even more if we also count all kinds of combinations within
+                                the letters if the typeface need to fully mimic the calligraphic hand
+                                written Arabic script. So according to each typeface, the number of
+                                glyphs can start with 130 and end in hundreds.</p>
+
+                            <p>Many letters look similar but are distinguished from one another by dots (ʾiʿjām) above
+                                or below their central part (rasm). These dots are an integral part of a letter, since
+                                they distinguish between letters that represent different sounds. For example, the
+                                Arabic letters ب (b), ت (t) and ث (th) have the same basic shape, but have one dot
+                                below, two dots above and three dots above, respectively. The letter ن (n) also has the
+                                same form in initial and medial forms, with one dot above, though it is somewhat
+                                different in isolated and final form.</p>
+
+                            <p>Both printed and written Arabic are cursive, with most of the letters within a word
+                                directly connected to the adjacent letters.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/arabic-page/arabic-letterforms.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row align-items-center d-flex justify-content-center">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center sub-banner-calligraphy">
+                <h1 class="my-3" style="text-align: center;">EXPLORING THE ARABIC CALLIGRAPHY</h1>
+            </div>
+        </div>
+
+        <!--gallery-->
+        <div class="row final">
+            <!--row 1-->
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2">
+                        <!--img 1-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/arabic-page/num1.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Nasta'liq calligraphy of a Persian poem by Mir Emad Hassani</p>
+                            </div>
+                        </div>
+
+                        <!--img 2-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/arabic-page/num2.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Arabic Calligraphy by Fathima Habna</p>
+                            </div>
+                        </div>
+
+                        <!--img 3-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/arabic-page/num3.png" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">The Emirates logo is written in traditional Arabic calligraphy</p>
+                            </div>
+                        </div>
+
+                        <!--img 4-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/arabic-page/num4.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">The Basmala in an 18th-century from the Ottoman region</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here">
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container">
+                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+    /*Aos*/
+    $(function () {
+        AOS.init({
+            startEvent: "DOMContentLoaded",
+            offset: 500,
+            duration: 3000,
+            delay: 15,
+        });
+    });
+
+</script>
+
+</html>

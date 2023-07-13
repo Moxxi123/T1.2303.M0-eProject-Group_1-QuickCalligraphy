@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Calligraphy</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Aos.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="home.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid">
+        <!--banner-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center main-banner-calligraphy">
+                <img src="image/calligraphy-page/main-banner-calligraphy.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!--header-->
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center slider-header"
+                data-aos="flip-left">
+                <h1>WHERE IT ALL BEGAN</h1>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="row d-flex align-items-center d-flex justify-content-center">
+            <!--content-left-->
+            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
+                data-aos="fade-left">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/calligraphy-page/history-calligraphy.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>A BRIEF HISTORY OF CALLIGRAPHY</h2>
+
+                            <p>The word ‘calligraphy’ is a combination of two Greek words: kallos (beauty) and
+                                graphein
+                                (to
+                                write).</p>
+
+                            <p>Calligraphy is the art of forming beautiful symbols by hand and arranging them
+                                well.It’s a set of skills and techniques for positioning and inscribing words so
+                                they
+                                show
+                                integrity,
+                                harmony, some sort of ancestry, rhythm and creative fire.</p>
+
+                            <p>Calligraphy has existed in many cultures, including Indian, Persian, and Islamic
+                                cultures; Arabic
+                                puts a particularly high value on beautiful script, and in East Asia calligraphy
+                                has
+                                long been
+                                considered a major art. Calligraphers in the West use pens with wide nibs, with
+                                which
+                                they
+                                produce strokes of widely differing width within a single letter.</p>
+
+                            <p>From the moment the first quill hit the first piece of parchment, humans have
+                                been
+                                looking for
+                                the most beautiful and decorative way to present their writing.</p>
+
+                            <p>From holy texts to royal decrees, Chaucer to Shakespeare and Greek to Latin, all
+                                writing
+                                was
+                                passed down from generation to generation – strange to think about in this
+                                technological
+                                age!
+                            </p>
+
+                            <p>It is estimated that the Romans were the first to really bring calligraphy to the
+                                masses
+                                – you
+                                only have to take a look at many of the statues throughout Italy or Roman
+                                remains in the
+                                UK to
+                                see the strikingly beautiful lettering that they painstakingly carved. They did
+                                also
+                                write in
+                                this style!</p>
+
+                            <p>So to summarize, the history of calligraphy is the history of people consciously
+                                identifying handwriting as a potential art form separate and distinct from any other
+                                method of shaping writing symbols (woodcut, typography, engraving, skywriting, etc).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--content-right-->
+            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
+                data-aos="fade-right">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>TRADITIONAL CALLIGRAPHY</h2>
+
+                            <p>To understand what traditional calligraphy is, it is important to first learn
+                                what the rules of traditional calligraphy are. It is these rules that will allow
+                                you to spot the details and distinguish this calligraphy style from modern
+                                calligraphy. For someone trying to explore the modern style of calligraphy, it
+                                is very important that he/she gets himself/herself well acquainted with the
+                                rules of traditional calligraphy. While modern calligraphy focuses on breaking
+                                the rules, one needs to know what these rules are before attempting to break
+                                them.</p>
+
+                            <p>Traditional calligraphy has a number of different styles that a person can use.
+                                These styles, commonly known as hands, have two distinct schools that they
+                                belong to. These schools of traditional calligraphy are the Spencerian and the
+                                Copperplate.</p>
+
+                            <p>Both the Spencerian school and the Copperplate school have specific rules that
+                                need to be followed, and it is important to know them to best create these
+                                traditional calligraphy styles. For anybody wanting to learn traditional
+                                calligraphy, Copperplate is the most recommended style. Using a pointed pen that
+                                has been specifically made to help create this calligraphy style, it
+                                familiarizes beginners with the rules and the vocabulary needed to learn
+                                calligraphy.</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/calligraphy-page/traditional-calligraphy.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!--content-left-->
+            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
+                data-aos="fade-left">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/calligraphy-page/mordern-calligraphy.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>MODERN CALLIGRAPHY</h2>
+
+                            <p>While traditional calligraphy can be fit inside the two distinct schools of
+                                Copperplate and Spencerian, modern calligraphy is a little harder to define. It
+                                is so owing to the simple fact that it incorporates myriad styles under its
+                                umbrella. However, to define what modern calligraphy is in the shortest manner
+                                possible, it can be considered as any form of calligraphy that is not a
+                                traditional form of calligraphy. While traditional calligraphy sticks with rules
+                                and particular formations and strokes, modern calligraphy likes to bend these
+                                rules and have fun with the style and script. It is a highly creative form of
+                                calligraphy and allows much greater leeway than what the traditional forms
+                                allow.</p>
+
+                            <p>Some salient features of modern calligraphy are as follows:</p>
+
+                            <ul>
+                                <li>Nonadherence to traditional rules – Traditional calligraphy requires people
+                                    to adhere to particular letterforms to be considered proper. The letters
+                                    need to be absolutely immaculate and perfect. Modern styles of calligraphy
+                                    on the other hand ignore these particulars and rather celebrate the
+                                    deviations. Therefore, if your letters are a bit squishy or extend beyond
+                                    the descender, it is absolutely okay. The imperfection of modern calligraphy
+                                    is what makes it refreshing.</li>
+                                <li>Accessible calligraphy style – While traditional calligraphy requires
+                                    immaculate precision and some would even debate, an abundance of skill,
+                                    modern calligraphy is much more accessible. Though even this style requires
+                                    skills and practice, it is much easier to learn if a respectable amount of
+                                    time is dedicated to it.</li>
+                                <li>You can mix and match – While traditional calligraphy rigorously points out
+                                    the importance of consistency, it is the inconsistency of modern styles of
+                                    calligraphy that make it appealing. A modern calligrapher can choose to mix
+                                    and match and even borrow letterforms from other calligraphy styles to
+                                    create his/her own unique style of modern calligraphy. A traditional
+                                    calligrapher does not have that permission and needs to stick with the
+                                    preset rules of that particular style.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row align-items-center d-flex justify-content-center">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center sub-banner-calligraphy">
+                <h1 class="my-3" style="text-align: center;">TIPS TO IMPROVE YOUR HANDWRTING</h1>
+            </div>
+        </div>
+
+
+        <!--INTRUCTION CONTENT-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center d-flex flex-wrap">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-3">
+                        <!--intructuion 1-->
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4"
+                            data-aos="fade-right">
+
+                            <p class="special-text" style="font-size: 1.8em;">1. Use a Nice Pen</p>
+
+                            <p>The adjective “nice” is subjective — you’ll have to hunt to find the pen that works for
+                                you! My choice of pen for everyday writing is the Pilot G2 05 because of the stroke
+                                width, the grip, and the jet black ink. I also like that it’s so responsive; I don’t
+                                have to exert a lot of pressure on the pen to ensure consistent ink flow.</p>
+
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/calligraphy-page/step-1.gif" alt="" style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p style="font-size: 0.8em; font-style: italic;">
+                                You can find thousands of pens on the market, so I encourage you to shop around. Pick up
+                                a pen here and there, and give it a try! It doesn’t matter if you prefer gel pens,
+                                fountain pens, ballpoint pens.
+                            </p>
+                        </div>
+
+                        <!--intruction 2-->
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4"
+                            data-aos="fade-right">
+
+                            <p class="special-text" style="font-size: 1.8em">2. Maintain a Relaxed Grip</p>
+
+                            <p>A nice, relaxed grip is one of the main things that will improve your handwriting. A
+                                “relaxed grip” means that none of the muscles in your hand are overly flexed, and your
+                                fingernails shouldn’t be white from squeezing the pen’s barrel. Many people tend to
+                                clutch the pen, which will result in an achy hand after a few minutes of writing</p>
+
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/calligraphy-page/step-2.gif" alt="" style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p style="font-size: 0.8em; font-style: italic;">
+                                We often clutch without realizing we’re doing it, so try to mentally check yourself
+                                every few minutes to make sure you’re still holding the pen comfortably.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center final">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-around gap-2">
+                        <!--intructuion 3-->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4"
+                            data-aos="fade-right">
+
+                            <p class="special-text" style="font-size: 1.8em;">3. Start with Drills</p>
+
+                            <p>Whether you plan on writing in cursive or print, it can be difficult to form nice letters
+                                without warming up. Doing a couple of simple drills will help you to write clear,
+                                confident characters. You can use the Drills section of the Improve Your Cursive
+                                Worksheet.</p>
+
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/calligraphy-page/step-3.png" alt="" style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p style="font-size: 0.8em; font-style: italic;">
+                                As children, we are generally taught to keep our paper in a vertical position in front
+                                of us. If that works for you, great! If not, feel free to experiment with different
+                                paper rotations. Keeping the paper at a certain angle can go a long way in helping you
+                                to improve your handwriting!
+                            </p>
+                        </div>
+
+                        <!--intruction 4-->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4"
+                            data-aos="fade-right">
+
+                            <p class="special-text" style="font-size: 1.8em">4. Practice with Worksheet</p>
+
+                            <p>If you want a structured way to improve your handwriting, I made a free worksheet for
+                                you! It’s three pages long and focuses on cursive writing — you can download it by
+                                clicking here. Basically, the worksheet takes you through drills, capital & lowercase
+                                letters, words, & sentences.</p>
+
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/calligraphy-page/step-4.png" alt="" style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p style="font-size: 0.8em; font-style: italic;">
+                                The cursive writing featured in the worksheet set isn’t any sort of formal style.
+                                Instead, it focuses on the letterforms that I, personally, use in everyday cursive
+                                handwriting. Those letters are easy to create, and they connect to each other
+                                beautifully to make for quick writing.
+                            </p>
+                        </div>
+
+                        <!--intruction 5-->
+                        <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4"
+                            data-aos="fade-right">
+
+                            <p class="special-text" style="font-size: 1.8em">5. Embrace Your own Style</p>
+
+                            <p>Handwriting is a very fluid, personal thing that is always evolving. It’s not like
+                                calligraphy, where you more or less write the same every time. Instead, you’ll have neat
+                                days, and you’ll have not so neat days. No matter how your handwriting looks (like the
+                                notes pictured below).</p>
+
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/calligraphy-page/step-5.png" alt="" style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p style="font-size: 0.8em; font-style: italic;">
+                                No matter how your handwriting looks, it is a wonderful reflection of you and your
+                                personality. That’s why people love receiving handwritten notes: they represent a piece
+                                of you! So, don’t get too hung up on a radical change: instead, focus on making clearly
+                                formed letters that are easy to read.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row align-items-center d-flex justify-content-center">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center sub-banner-calligraphy">
+                <h1 class="my-3" style="text-align: center;">SOME MOTIVATIONAL CALLIGRAPHY ARTS</h1>
+            </div>
+        </div>
+
+        <!--gallery-->
+            <!--row 1-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center final">
+                <div class="col-xxl-10 col-xl-10 col-lg-10">
+                    <div class="row gallery">
+                        <div id="list-img">
+                          <img src="image/calligraphy-page/num1.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num2.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num3.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num4.png" class="gallery-hover">
+                        </div>
+
+                        <div id="list-img">
+                          <img src="image/calligraphy-page/num5.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num6.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num7.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num8.jpg" class="gallery-hover">
+                        </div>
+
+                        <div id="list-img">
+                          <img src="image/calligraphy-page/num9.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num10.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num11.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num12.jpg" class="gallery-hover">
+                        </div>
+
+                        <div id="list-img">
+                          <img src="image/calligraphy-page/num13.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num14.jpg" class="gallery-hover">
+
+                          <img src="image/calligraphy-page/num15.jpg" class="gallery-hover">
+                          
+                          <img src="image/calligraphy-page/num16.jpg" class="gallery-hover">
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="#">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here">
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container">
+                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+    /*Aos*/
+    $(function () {
+        AOS.init({
+            startEvent: "DOMContentLoaded",
+            offset: 500,
+            duration: 3000,
+            delay: 15,
+        });
+    });
+
+</script>
+
+</html>

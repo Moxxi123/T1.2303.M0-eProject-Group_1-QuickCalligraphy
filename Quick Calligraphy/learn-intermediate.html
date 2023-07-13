@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Learn Intermediate Calligraphy</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Aos.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="home.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid">
+        <!--banner-->
+        <div class="row align-items-center d-flex justify-content-center" style="margin-top: 75px;">
+            <div class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="image/learn-intermediate-page/image-slider-1.jpg" alt=""
+                            style="width: 100%; height: 350px;">
+                    </div>
+                    <div class="item">
+                        <img src="image/learn-intermediate-page/image-slider-2.png" alt=""
+                            style="width: 100%; height: 350px;">
+                    </div>
+                    <div class="item">
+                        <img src="image/learn-intermediate-page/image-slider-3.jpg" alt=""
+                            style="width: 100%; height: 350px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--header-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center slider-header">
+                <h1>HOW TO START WITH MODERN CALLIGRAPHY</h1>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="row d-flex align-items-center d-flex justify-content-center">
+            <!--content-center-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+
+                    <div class="col-xxl-12 col-xl-12 col-lg-12">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2 class="mb-4">FIVE THINGS YOU NEED TO KNOW BEFORE STARTING CALLIGRAPHY</h2>
+
+                            <ol>
+                                <li>Start Simple, Learn Faux Calligraphy, Study The Letter Forms, Get The Right Tools &
+                                    Practice
+                                    Calligraphy Drills</li>
+                                <li>All pen holders, brush pens, nibs, and inks are not the same. Each serves a specific
+                                    purpose. You
+                                    will save yourself a lot of frustration, time, and money by getting the right tools.
+                                </li>
+                                <li>This might be the best piece of calligraphy advice for every beginner. I wish there
+                                    were a more
+                                    natural way to get better at calligraphy, but there is not. There is no one magic
+                                    tool to become a
+                                    better calligrapher. The magic is in practice!</li>
+                                <li>DON’T COMPARE YOURSELF TO OTHERS.</li>
+                                <li>GIVE YOURSELF GRACE! Last, but not least, this piece of calligraphy advice for
+                                    beginners is one we
+                                    all need, no matter how long we’ve been doing this art!</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--content-right-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>HOW TO HOLD A BRUSH PEN ?</h2>
+
+                            <p>First things first let’s just quickly cover this part because i often see beginners
+                                struggling with how to hold a brush correctly.</p>
+
+                            <p>Different people like to hold the pen in different ways but the most important thing is
+                                the angle on which you to hold it.</p>
+
+                            <p style="color: red;"><strong>Check out the reference image on right –></strong></p>
+
+                            <p>Holding the pen too upright will not give you the desired effect (thick and thin
+                                contrast) and it will also damage the tip of your pen.</p>
+
+                            <p>That been said, the next important part is to know where to apply thin strokes and where
+                                to apply the thick strokes. (if you already know this feel free to skip to the next
+                                section).</p>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/learn-intermediate-page/how-to-hold-a-pen.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!--content-left-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <img src="image/learn-intermediate-page/strokes-rule.jpg" alt=""
+                            style="width: 100%; height: auto;">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>THE GENERAL RULE IS THAT YOUR STROKES GOING UP ARE THIN WHILE THE ONES GOING DOWN ARE
+                                THICK.</h2>
+
+                            <p>The thick down strokes are created by applying pressure while the up strokes are done
+                                with the tip of the pen – without applying any pressure.</p>
+
+                            <p>If you are a complete beginner it is essential that you first get familiar with the brush
+                                pen and how to use it.</p>
+
+                            <p>Before even thinking to start writing letters and words, try to get comfortable creating
+                                thin lines when going up and thick lines when going down.</p>
+
+                            <p>This will help you to get to know the tool and you will start developing a feeling for it
+                                in your hand –</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--INTRUCTION CONTENT-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center d-flex flex-wrap">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <!--header-->
+                    <div
+                        class="col-xxl-9 col-xl-9 col-lg-12 d-flex align-items-center d-flex justify-content-center slider-header">
+                        <h1>THE BASIC CALLIGRAPHY STROKES</h1>
+                    </div>
+
+                    <!--center text-->
+                    <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center">
+                        <div class="row d-flex align-items-center d-flex justify-content-center">
+                            <div
+                                class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-center my-5">
+                                <p style="text-align: center; font-weight: 600; font-size: 1.2em;">In calligraphy, you
+                                    need to start with the very, very basics. These are referred to as ‘strokes’. All of
+                                    your letters are made up of strokes. So, practice the strokes- over, and over, and
+                                    over again- until they’re consistent. The more consistent your strokes, the more
+                                    consistent your letters!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2">
+                        <!--intructuion 1-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-1.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">1. Up Stroke</p>
+
+                            <p>With the upstroke you want to start the bottom and extend upwards with a slight curve
+                                towards the waist. You will want to go slow and try your best to stay at a consistent
+                                speed.</p>
+
+                            <p>Pro Tip: Don’t “Flick”.</p>
+                        </div>
+
+                        <!--intruction 2-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-2.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">2. Down Stroke</p>
+
+                            <p>With the downstroke you will be working opposite to the upstroke. You will want to start
+                                at the top and extend downwards starting with medium pressure and gradually adding more
+                                as you get to the bottom. Make sure as you approach the bottom you ease off the
+                                pressure.</p>
+
+                            <p>Again you will want to go slow and stay at a consistent speed.</p>
+                        </div>
+
+                        <!--intructuion 3-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-3.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">3. Over turn</p>
+
+                            <p>With this stroke you will want to start at the bottom applying light pressure for your
+                                upstroke and then curving over into a thick downstroke. You want to make sure your two
+                                lines stay parallel and that all strokes stay on the same plane./p>
+
+                            <p>Pro Tip: No Flick or tail at the bottom you want to end it straight.</p>
+                        </div>
+
+                        <!--intructuion 4-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-4.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">4. Underturn</p>
+
+                            <p>Starting at the top moving downwards you want to apply a heavy pressure going into a
+                                light upstroke.</p>
+
+                            <p>You again want to make sure that your two lines stay parallel and make sure to let off
+                                the pressure early.</p>
+
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2 final">
+                        <!--intructuion 5-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-5.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">5. Compound Curve</p>
+
+                            <p>With the upstroke you want to start the bottom and extend upwards with a slight curve
+                                towards the waist.</p>
+
+                            <p>You will want to go slow and try your best to stay at a consistent speed.</p>
+                        </div>
+
+                        <!--intruction 6-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-6.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">6. Oval</p>
+
+                            <p>One of the most important things to remember with this stroke is that you want to start
+                                off on the side. Most tend to start at the top and this creates a gap where the lines
+                                end up meeting. This one starts with an upstroke light pressure and as you transition at
+                                the top into heavy pressure downstroke, then another transition at the bottom back into
+                                a light pressure upstroke.</p>
+
+                            <p>Pro tips: Try not to make the top and bottom pointed</p>
+                        </div>
+
+                        <!--intructuion 7-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-7.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">7. Ascending Loop</p>
+
+                            <p>With this stoke you start in the middle with a light upstroke and adding pressure as you
+                                come back down. You will transition at the top and curve down into a heavy downstroke.
+                            </p>
+
+                            <p> Make sure everything is at the same angle and that you don’t end up with a tail where
+                                the loop extends through.</p>
+                        </div>
+
+                        <!--intructuion 8-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start p-4">
+                            <div
+                                class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                                <img src="image/learn-intermediate-page/step-8.jpg" alt=""
+                                    style="width: 100%; height: 350px;">
+                            </div>
+
+                            <p class="special-text" style="font-size: 1.8em;">8. Descending Loop</p>
+
+                            <p>For this final stroke you will be starting with a heavy downstroke applying pressure
+                                until you come back up with light upstroke.</p>
+
+                            <p>Similar to the ascending loop you want to make sure you maintain a steady speed and don’t
+                                end up with the loop extending through creating a tail.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="#">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here">
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container">
+                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+    /*Owl Carousel*/
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplaySpeed: 1500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+
+</script>
+
+</html>

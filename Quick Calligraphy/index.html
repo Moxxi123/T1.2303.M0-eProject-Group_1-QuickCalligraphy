@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Home</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!--Aos.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="#">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid">
+        <!--banner-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center main-banner">
+                <img src="image/home/main-banner.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+        <!--header-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center slider-header">
+                <h1>ANCIENT CALLIGRAPHY ARTS</h1>
+            </div>
+        </div>
+
+        <!--image slider-->
+        <div class="row d-flex align-items-center d-flex justify-content-center image-slider">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 slider">
+                <div class="owl-carousel">
+                    <div class="slider-card">
+                        <a href=""><img src="image/home/arabic-calligraphy.jpg" alt=""></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a href=""><img src="image/home/eastasian-calligraphy.jpg" alt="" class="img-fluid"></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a href=""><img src="image/home/greek-calligraphy.jpg" alt="" class="img-fluid"></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a href=""><img src="image/home/indic-calligraphy.jpg" alt="" class="img-fluid"></a>
+                    </div>
+
+                    <div class="slider-card">
+                        <a href=""><img src="image/home/western-calligraphy.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--CONTENT-->
+        <div class="row">
+            <!--content-left-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 sub-container-content">
+                <div class="row d-flex align-items-center d-flex justify-content-start ms-5">
+                    <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center"
+                        data-aos="fade-left">
+                        <div class="row d-flex align-items-center d-flex justify-content-center">
+                            <div class="col-xxl-4 col-xl-4 col-lg-6 d-flex justify-content-end">
+                                <img src="image/home/introduction.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="col-xxl-8 col-xl-8 col-lg-6">
+                                <div
+                                    class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content">
+                                    <div class="sub-content">
+                                        <div class="center-left">
+                                            <img src="image/home/banner-left-header2.png" alt="">
+
+                                            <h2>INTRODUCTION</h2>
+                                        </div>
+                                    </div>
+
+                                    <p>The word ‘calligraphy’ is a combination of two Greek words: kallos (beauty) and
+                                        graphein
+                                        (to
+                                        write).</p>
+
+                                    <p>Calligraphy is the art of forming beautiful symbols by hand and arranging them
+                                        well.</p>
+
+                                    <p>It’s a set of skills and techniques for positioning and inscribing words so they
+                                        show
+                                        integrity,
+                                        harmony, some sort of ancestry, rhythm and creative fire.</p>
+
+                                    <p>Calligraphy has existed in many cultures, including Indian, Persian, and Islamic
+                                        cultures; Arabic
+                                        puts a particularly high value on beautiful script, and in East Asia calligraphy
+                                        has
+                                        long been
+                                        considered a major art. Calligraphers in the West use pens with wide nibs, with
+                                        which
+                                        they
+                                        produce strokes of widely differing width within a single letter.</p>
+
+                                    <div class="learn-more">
+                                        <div class="center">
+                                            <img src="image/home/learn-more-border.png" alt=""
+                                                style="width: 128px; height: 40px;">
+
+                                            <div class="learn-more-text-box">
+                                                <a href="calligraphy-page.html" class="special-link">LEARN
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--content-right-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 sub-container-content">
+                <div class="row d-flex align-items-center d-flex justify-content-end me-5">
+                    <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center"
+                        data-aos="fade-right">
+                        <div class="row d-flex align-items-center d-flex justify-content-center">
+                            <div class="col-xxl-8 col-xl-8 col-lg-6">
+                                <div
+                                    class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content">
+                                    <div class="sub-content">
+                                        <div class="center-right">
+                                            <img src="image/home/banner-right-header2.png" alt="">
+
+                                            <h2>HISTORY</h2>
+                                        </div>
+                                    </div>
+
+                                    <p>From the moment the first quill hit the first piece of parchment, humans have
+                                        been
+                                        looking for
+                                        the most beautiful and decorative way to present their writing.</p>
+
+                                    <p>From holy texts to royal decrees, Chaucer to Shakespeare and Greek to Latin, all
+                                        writing
+                                        was
+                                        passed down from generation to generation – strange to think about in this
+                                        technological
+                                        age!
+                                    </p>
+
+                                    <p>It is estimated that the Romans were the first to really bring calligraphy to the
+                                        masses
+                                        – you
+                                        only have to take a look at many of the statues throughout Italy or Roman
+                                        remains in the
+                                        UK to
+                                        see the strikingly beautiful lettering that they painstakingly carved. They did
+                                        also
+                                        write in
+                                        this style!</p>
+
+                                    <div class="learn-more">
+                                        <div class="center">
+                                            <img src="image/home/learn-more-border.png" alt=""
+                                                style="width: 128px; height: 40px;">
+
+                                            <div class="learn-more-text-box">
+                                                <a href="calligraphy-page.html" class="special-link">LEARN
+                                                    MORE</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xxl-4 col-xl-4 col-lg-6">
+                                <img src=" image/home/history.jpg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-banner">
+                <img src="image/home/sub-banner.png" alt="" class="img-fluid">
+            </div>
+        </div>
+
+
+        <!--LINK CONTENT-->
+        <div class="row">
+            <div
+                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-stretch d-flex justify-content-around d-flex flex-wrap">
+                <!--link 1-->
+                <div class="col-xxl-2 col-xl-2 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-center card-info"
+                    style="height: auto;" data-aos="fade-up">
+                    <div class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                        <img src="image/home/arabic-calligraphy-2.png" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="special-text">Arabic</p>
+
+                    <p>Arabic calligraphy is the artistic practice of handwriting and calligraphy based on the Arabic
+                        alphabet. It is known in Arabic as khatt (Arabic: خط), derived from the word 'line', 'design',
+                        or 'construction'.Kufic is the oldest form of the Arabic script.</p>
+
+                    <div class="learn-more-1">
+                        <div class="center">
+                            <img src="image/home/learn-more-border.png" alt="" style="width: 128px; height: 40px;">
+
+                            <div class="learn-more-text-box">
+                                <a href="arabic-page.html" class="special-link">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--link 2-->
+                <div class="col-xxl-2 col-xl-2 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-center card-info"
+                    style="height: auto;" data-aos="fade-up">
+                    <div class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                        <img src="image/home/eastasian-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="special-text">East Asian</p>
+
+                    <p>As an artistic genre, brush calligraphy holds a central place in the cultural history in East
+                        Asia. The form of the characters used in the Chinese writing system—as well as the other writing
+                        systems that were derived from it— have long held a place of special regard in the aesthetic
+                        traditions of the region. Brush calligraphy has historically been ubiquitous in the visual
+                        culture of China, Japan, and Korea, either as a complement to another kind of image (perhaps a
+                        landscape painting or part of an illustrated book) or as a work of art in its own right;
+                        consequently, it is central to the study of East Asian art history.</p>
+
+                    <div class="learn-more-1">
+                        <div class="center">
+                            <img src="image/home/learn-more-border.png" alt="" style="width: 128px; height: 40px;">
+
+                            <div class="learn-more-text-box">
+                                <a href="east-asian-page.html" class="special-link">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--link 3-->
+                <div class="col-xxl-2 col-xl-2 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-center card-info"
+                    style="height: auto;" data-aos="fade-up">
+                    <div class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                        <img src="image/home/greek-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="special-text">Greek</p>
+
+                    <p>It may be surprising to know that the printed Greek found in textbooks and Greek New Testaments looks considerably different than the Greek penned by scribes more than a millennium ago. This handwritten Greek was produced in two stages and two distinctly different forms. These forms are known today as “majuscule” and “minuscule“.</p>
+
+                    <div class="learn-more-1">
+                        <div class="center">
+                            <img src="image/home/learn-more-border.png" alt="" style="width: 128px; height: 40px;">
+
+                            <div class="learn-more-text-box">
+                                <a href="greek-page.html" class="special-link">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--link 4-->
+                <div class="col-xxl-2 col-xl-2 col-lg-6 d-flex flex-column d-flex align-items-start d-flex justify-content-center card-info"
+                    style="height: auto;" data-aos="fade-up">
+                    <div class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                        <img src="image/home/indic-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="special-text">Indic</p>
+
+                    <p>Indic writing first appeared in the 3rd century BCE during the reign of Ashoka (c. 265–238 BCE).
+                        The leader of a great empire, Ashoka turned from military success to embrace the arts and
+                        religion. Ashoka’s edicts were committed to stone. These inscriptions are stiff and angular in
+                        form. Following the Ashoka style of Indic writing, two new calligraphic types appear: Kharoshti
+                        and Brahmi. Kharoshti was used in the northwestern regions of India from the 3rd century BCE to
+                        the 4th century CE, and it was used in Central Asia until the 8th century. It is characterized
+                        by a vigorous pen letter, reflecting the influence of Middle Eastern calligraphy.</p>
+
+                    <div class="learn-more-1">
+                        <div class="center">
+                            <img src="image/home/learn-more-border.png" alt="" style="width: 128px; height: 40px;">
+
+                            <div class="learn-more-text-box">
+                                <a href="indic-page.html" class="special-link">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--link 5-->
+                <div class="col-xxl-2 col-xl-2 col-lg-6 d-flex flex-column d-flex align-items-start d-flex justify-content-center card-info"
+                    style="height: auto;" data-aos="fade-up">
+                    <div class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-3">
+                        <img src="image/home/western-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="special-text">Western</p>
+
+                    <p>The historiography of Western calligraphy is very closely associated with Romans and Athens-The two great ancient powers of the Western world. They developed the first scripts that was easy to use. With time, the Romans also started to get creative with their alphabet and script, using a more cursive style of writing. However, their letters were still clearer and simpler to read, compared to the Christian monks who used more complex style of writing to decorate the Bible.</p>
+
+                    <div class="learn-more-1">
+                        <div class="center">
+                            <img src="image/home/learn-more-border.png" alt="" style="width: 128px; height: 40px;">
+
+                            <div class="learn-more-text-box">
+                                <a href="western-page.html" class="special-link">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here">
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container">
+                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+    /*Owl Carousel*/
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            center: true,
+            navText: [
+                "<i class='left'><img src='image/home/double-left.png' alt=''></i>",
+                "<i class='right'><img src='image/home/double-right.png' alt=''></i>"
+            ],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        });
+    });
+
+    /*Aos*/
+    $(function () {
+        AOS.init({
+            startEvent: "DOMContentLoaded",
+            offset: 500,
+            duration: 3000,
+            delay: 15,
+        });
+    });
+
+
+</script>
+
+</html>
