@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - About Us</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid" style="padding: 0;">
+        <div class="masthead" style="background-image: url('image/about-page/main-banner-about-us.jpg');">
+
+            <div class="color-overlay d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column d-flex justify-content-center align-items-start">
+                    <p style="font-size: 2em; margin: 0">Who we are</p>
+                    <p style="font-size: 4em; margin: 0">Designers, thinkers & collaborators</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center"
+                style="background-color: #fff7e4;">
+                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-center d-flex justify-content-start"
+                    style="margin: 50px 0 20px 0;">
+                    <p style="font-weight: 600; font-size: 2em; color: #033f52;">We're a big team, comprised of pretty
+                        small teams, powered by unique minds</p>
+                </div>
+
+                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-start d-flex justify-content-start gap-5">
+                    <div class="col-xxl-5 col-xl-5 col-lg-5 d-flex align-items-center d-flex justify-content-start">
+                        <p>At Quick Calligraphy, we’ve seen again and again how the seemingly simple act of creating can
+                            be a force for growth, change, and discovery in people’s lives. We want to inspire and
+                            multiply the kind of creative exploration that furthers expression, learning and
+                            application.</p>
+                    </div>
+
+                    <div
+                        class="col-xxl-6 col-xl-6 col-lg-6 d-flex flex-column d-flex align-items-center d-flex justify-content-start">
+                        <p>We’re outcome focussed, not output focussed. We take a big picture approach by assessing your
+                            current situation, what the desired goal is, and develop ways to give you the best chance of
+                            achieving success.</p>
+
+                        <p>We’re realistic and resourceful. We work smart. That’s our role as creative consultants.</p>
+                    </div>
+                </div>
+
+                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-center d-flex justify-content-start"
+                    style="margin: 20px 0 20px 0;">
+                    <p style="font-weight: 600; font-size: 2em; color: #033f52;">Our team</p>
+                </div>
+
+                <div
+                    class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-start d-flex justify-content-around final">
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
+                        <div
+                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
+                            <img src="image/about-page/avt1.jpg" alt="" style="width: 50%; height: auto;">
+                        </div>
+                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Mr.Tuan</p>
+
+                        <p>Hi, my name is Tuan. Regarding the eProject song, I joined my brother's comedy. As a leader,
+                            I understand my responsibilities. With this eProject we did it as a practice rather than a
+                            test of ability. A process of learning and creating together what we have learned and
+                            created. Thank you school for the opportunity and trust.</p>
+                    </div>
+
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
+                        <div
+                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
+                            <img src="image/about-page/avt2.jpg" alt="" style="width: 50%; height: auto;">
+                        </div>
+
+                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Mr.Huy</p>
+
+                        <p>Hi, my name is Huy. As a member participating in the eProject article with you. There are
+                            many limitations in knowledge, but thanks to that we have learned and understood more about
+                            HTML. For us, the difficulty is a test of each person's ability to find hidden secrets. We
+                            overcome and perfect more. Thank you teachers for creating conditions and opportunities.</p>
+                    </div>
+
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
+                        <div
+                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
+                            <img src="image/about-page/avt3.jpg" alt="" style="width: 50%; height: auto;">
+                        </div>
+
+                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Ms.Nhung</p>
+
+                        <p>Hi, I'm Nhung. Currently a student at FPT Aptech. My two brothers and I participated in the
+                            school's eProject. I am grateful for the eProject that the school set out for us. There were
+                            difficulties in terms of knowledge and time, but we tried to perfect and create a website of
+                            our own. Thank you, teachers and school for creating conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here" required>
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                        abc@abc.com</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+
+</script>
+
+</html>

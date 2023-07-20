@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Western Calligraphy</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Angular-messages.min.js - messages module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid start">
+
+        <!--CONTENT-->
+        <div class="row d-flex align-items-center d-flex justify-content-center">
+            <!--content-left-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex align-items-center d-flex justify-content-end">
+                        <img src="image/western-page/western-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-start">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>THE HISTORY OF WESTERN CALLIGRAPHY</h2>
+
+                            <p>The historiography of Western calligraphy is very closely associated with Romans and
+                                Athens-The two great ancient powers of the Western world. They developed the first
+                                scripts that was easy to use. With time, the Romans also started to get creative with
+                                their alphabet and script, using a more cursive style of writing. However, their letters
+                                were still clearer and simpler to read, compared to the Christian monks who used more
+                                complex style of writing to decorate the Bible.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Unicial:</p>
+
+                            <p>The Uncial script developed in the second or third century AD, influenced by the Greek
+                                alphabet. This script is characterised by bold and curved strokes, and was simpler than
+                                the Roman capitals, allowing for speedier writing, ideal for copying manuscripts such as
+                                holy scriptures. Christian churches promoted the development of this writing through
+                                prolific copying of the Bible and other sacred texts.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Caronlingan:</p>
+
+                            <p>Variations of the Uncial scripts developed as its influence travelled to other parts of
+                                Europe. An important script of the medieval era was the Carolingan script developed
+                                during the reign of Charlemagne in the late 8th century. While in England, the Insular
+                                script developed and spread across England and continental Europe.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Gothic:</p>
+
+                            <p>Around the 12th century, the Gothic script developed in northern Europe from the
+                                Carolingian hand. This style, characterised by compressed thick, angular strokes and
+                                shapes, is very popular today and different variations of it are practiced by
+                                calligraphers. Among the variations are Textura, Lombardic Capitals, Batarde and
+                                Fraktur.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Italian & Humanist:</p>
+
+                            <p>In Italy, however, the Gothic script was considered rather unpractical and fatiguing to
+                                the eye. Thus the Humanist minuscule was favoured. This script was influenced by the
+                                Caronlingian hand and arose around the 15th century.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Foundation:</p>
+
+                            <p>At the start of the 20th century, Edward Johnston rediscovered how the formal bookhands
+                                of the ancient illuminated manuscripts had been written using square cut quills which
+                                produced thick and think strokes with even pressure. Johnston advocated that developing
+                                an upright roundhand was an essential. Thereafter, the penman can adapt and develop it
+                                to a sloping or angular hand with ease.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Roundhand & Copperplate:</p>
+
+                            <p>During the 17th and 18th centuries, English writing masters Geroge Bickham, George
+                                Shelley and Charles Snell popularised Roundhand's popularity, so that by the mid-18th
+                                century this style had spread across Europe and crossed the Atlantic to North America.
+                            </p>
+
+                            <p>Also in the 18th century, the development of metal plate-engraving and the rise of a
+                                business class gave rise to the importance of the Copperplate script.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--content-right-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-end">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>WESTERN ALPHABET</h2>
+
+                            <p class="special-text" style="font-size: 1.5em;">Rustic capitals:</p>
+
+                            <p>Uncial's rounded form owes something to the Greek alphabet, and historically it's
+                                associated with the early Christian Church. It superficially resembles traditional Irish
+                                scripts (Irish/Insular Majuscule). In one form or another, it was used in handwritten
+                                books for nearly a millennium. For much of that time it was strictly a calligraphy
+                                alphabet (rather than a historical script) in that it was written out slowly and
+                                painstakingly to look as impressive as possible.</p>
+
+                            <p>Rustic capitals are similar to Roman square capitals, but are less rigid, influenced more
+                                by pen and ink writing on papyrus or parchment. The letters are thinner and more
+                                compressed, use many more curved lines than do square capitals, and have descenders
+                                extending below the baseline.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Uncial script:</p>
+
+                            <p>In general, there are some common features of uncial script:</p>
+
+                            <p>⟨f⟩, ⟨i⟩, ⟨p⟩, ⟨s⟩, ⟨t⟩ are relatively narrow.</p>
+
+                            <p>⟨m⟩, ⟨n⟩ and ⟨u⟩ are relatively broad; ⟨m⟩ is formed with curved strokes (although a
+                                straight first stroke may indicate an early script), and ⟨n⟩ is written as ⟨ɴ⟩ to
+                                distinguish it from ⟨r⟩ and ⟨s⟩.</p>
+
+                            <p>⟨e⟩ is formed with a curved stroke, and its arm (or hasta) does not connect with the top
+                                curve; the height of the arm can also indicate the age of the script (written in a high
+                                position, the script is probably early, while an arm written closer to the middle of the
+                                curve may indicate a later script).</p>
+
+                            <p>⟨l⟩ has a small base, not extending to the right to connect with the next letter.</p>
+
+                            <p>⟨r⟩ has a long, curved shoulder ⟨ꞃ⟩, often connecting with the next letter.</p>
+
+                            <p>⟨s⟩ resembles (and is the ancestor of) the "long s" ⟨ſ⟩; in uncial it ⟨ꞅ⟩ looks more like
+                                ⟨r⟩ than ⟨f⟩.</p>
+
+                            <p>In later uncial scripts, the letters are sometimes drawn haphazardly; for example, ⟨ll⟩
+                                runs together at the baseline, bows (for example in ⟨b⟩, ⟨p⟩, ⟨r⟩) do not entirely curve
+                                in to touch their stems, and the script is generally not written as cleanly as
+                                previously.</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-xxl-4 col-xl-4 col-lg-4 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
+                        <p>1.Rustic capitals</p>
+
+                        <img src="image/western-page/rustic-capital-alphabet.jpg" alt="" class="img-fluid">
+
+                        <p>2.Uncial script</p>
+
+                        <img src="image/western-page/unical-script-alphabet.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row align-items-center d-flex justify-content-center">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center sub-banner-calligraphy">
+                <h1 class="my-3" style="text-align: center;">EXPLORING THE WESTERN CALLIGRAPHY</h1>
+            </div>
+        </div>
+
+        <!--gallery-->
+        <div class="row final">
+            <!--row 1-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2">
+                        <!--img 1-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/western-page/num1.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">First page of Paul's epistle to Philemon in the Rochester Bible (12th
+                                    century)</p>
+                            </div>
+                        </div>
+
+                        <!--img 2-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/western-page/num2.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Page of the Virgilius Romanus (5th century)</p>
+                            </div>
+                        </div>
+
+                        <!--img 3-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/western-page/num3.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Lindisfarne Gospels (c.700) contains the incipit from the Gospel of
+                                    Matthew</p>
+                            </div>
+                        </div>
+
+                        <!--img 4-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/western-page/num4.png" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Edward Johnston, founder of modern calligraphy, at work in 1902</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here">
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container">
+                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+</script>
+
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Contact Us</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Angular-messages.min.js - messages module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="greek-page.html">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid" style="padding: 0;">
+        <div>
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center"
+                style="background-color: #ffe3ea">
+                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-center d-flex justify-content-center"
+                    style="margin: 50px 0 50px 0;">
+                    <p style="font-weight: 600; font-size: 2em; color: #033f52;">GET IN TOUCH</p>
+                </div>
+
+                <div class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-start d-flex justify-content-around"
+                    style="margin-bottom: 50px;">
+                    <!--contact-->
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start">
+
+                        <img src="image/contact-page/icon-phone.png" alt=""
+                            style="width: 25%; height: auto; margin-bottom: 25px;">
+                        <p style="font-weight: 600; font-size: 1.4em; color: #033f52; margin-bottom: 0px;">BY PHONE</p>
+
+                        <p style="font-weight: 600; font-size: 0.6em;">(Monday to Friday, 9am to 4pm PST)</p>
+
+                        <p style="font-weight: 600; font-size: 1em; color: #cca01d; margin-bottom: 0px;">HOT LINE</p>
+
+                        <p style="font-weight: 600; font-size: 1em; color: #cca01d;">093-131-3329</p>
+
+                        <p style="font-weight: 600; font-size: 1em; color: #cca01d; margin-bottom: 0px;">TRAINNING
+                            OFFICE
+                        </p>
+
+                        <p style="font-weight: 600; font-size: 1em; color: #cca01d;">028-730-056-54</p>
+
+                    </div>
+
+                    <!--location-->
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start">
+
+                        <img src="image/contact-page/icon-location.png" alt=""
+                            style="width: 25%; height: auto; margin-bottom: 25px;">
+                        <p style="font-weight: 600; font-size: 1.4em; color: #033f52; margin-bottom: 0px;">LOCATION</p>
+
+                        <p
+                            style="font-weight: 600; font-size: 1em; color: #cca01d; margin-bottom: 0px; text-align: center;">
+                            590 Cach Mang Thang Tam Street, Ward 11, District 3, Ho Chi Minh City</p>
+
+                    </div>
+
+                    <!--mail-->
+                    <div
+                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start">
+
+                        <img src="image/contact-page/icon-mail.png" alt=""
+                            style="width: 25%; height: auto; margin-bottom: 25px;">
+                        <p style="font-weight: 600; font-size: 1.4em; color: #033f52; margin-bottom: 0px;">BY MAIL</p>
+
+                        <p style="font-weight: 600; color: #cca01d;">aptech.fpt@fe.edu.vn</p>
+
+                        <a href="mailto:aptech.fpt@fe.edu.vn" class="btn btn--contact">MAIL US</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--FORM AND MAP CONTENT-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center"
+                style="background-color: #fff7e4;">
+                <div class="col-xxl-11 col-xl-11 col-lg-11 d-flex align-items-center d-flex justify-content-center gap-5"
+                    style="margin-bottom: 50px; padding-top: 80px;">
+                    <!--form-->
+                    <div
+                        class="col-xxl-5 col-xl-5 col-lg-5 d-flex flex-column d-flex align-items-center d-flex justify-content-center py-5">
+                        <div
+                            class="col-xxl-11 col-xl-11 col-lg-11 d-flex align-items-center d-flex justify-content-center form-container-1">
+                            <form action="" name="contact">
+                                <!--name-->
+                                <div
+                                    class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                    <label><strong>Name</strong></label>
+
+                                    <input type="text" name="nameid" ng-model="mNameid" placeholder="Name*"
+                                        ng-pattern="/^\S.*$/" ng-trim="false" ng-maxlength="30" required>
+
+                                    <div ng-messages="contact.nameid.$error" ng-messages-multiple>
+                                        <div ng-message="required"
+                                            ng-show="contact.nameid.$error.required && contact.nameid.$dirty"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name is
+                                            Required.</div>
+                                        <div ng-message="pattern"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name has format
+                                            at least 1 character except for space.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--email-->
+                                <div
+                                    class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                    <label><strong>Email</strong></label>
+
+                                    <input type="email" name="mail" ng-model="mMail" placeholder="Email*"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        required>
+
+                                    <div ng-messages="contact.mail.$error" ng-messages-multiple>
+                                        <div ng-message="required"
+                                            ng-show="contact.mail.$error.required && contact.mail.$dirty"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email is
+                                            required.</div>
+                                        <div ng-message="pattern"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email has
+                                            format abc@abc.com</div>
+                                    </div>
+                                </div>
+
+                                <!--text box-->
+                                <div
+                                    class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                    <label><strong>Message</strong></label>
+
+                                    <textarea placeholder="Drop us a line..." rows="5" style="width: 100%;"></textarea>
+
+                                </div>
+
+                                <!--check box-->
+                                <div class="d-flex align-items-start d-flex justify-content-start">
+                                    <input class="form-check-input" type="checkbox" name="checkbox" ng-model="mCheckbox"
+                                        required style="margin-right: 10px;">
+
+                                    <p style="margin-right: 5px;">I accept the</p>
+
+                                    <a href="" data-bs-toggle="modal" data-bs-target="#myModal-1" href=""
+                                        data-toggle="tooltip" data-placement="bottom" title="Click here">Terms of
+                                        Service</a>
+                                </div>
+
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal-1">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                                <p class="special-text" style="font-size: 1.4em; margin: 0;">TERM OF
+                                                    SERVICE</p>
+
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p class="special-text" style="font-size: 1.1em;">BY VISITING QUICK
+                                                    CALLIGRAPHY, YOU ARE CONSENTING TO OUR TERMS AND CONDITIONS</p>
+
+                                                <p class="special-text" style="font-size: 1.1em;">1. Overview</p>
+
+                                                <p>The terms “we,” “us,” and “our” refer to Quick Calligraphy. The term
+                                                    the “Site” refers to Quick Calligraphy Site. The terms “user,”
+                                                    “you,” and “your” refer to site visitors, and any other users of the
+                                                    site.</p>
+
+                                                <p>Use of Quick Calligraphy, including all materials presented herein
+                                                    and all online services provided by Caitlin Jane Calligraphy, is
+                                                    subject to the following Terms and Conditions. These Terms and
+                                                    Conditions apply to all site visitors, customers, and all other
+                                                    users of the site. By using the Site or Service, you agree to these
+                                                    Terms and Conditions, without modification, and acknowledge reading
+                                                    them.</p>
+
+                                                <p class="special-text" style="font-size: 1.1em;">2. Use of the site and
+                                                    service</p>
+
+                                                <p>To access or use the Site, you must be 18 years of age or older and
+                                                    have the requisite power and authority to enter into these Terms and
+                                                    Conditions. Children under the age of 18 are prohibited from using
+                                                    the Site. Information provided on the Site and in the Service
+                                                    related to calligraphy and hand lettering and other information are
+                                                    subject to change. Quick Calligraphy makes no representation or
+                                                    warranty that the information provided, regardless of its source
+                                                    (the “Content”), is accurate, complete, reliable, current, or
+                                                    error-free. Quick Calligraphy disclaims all liability for any
+                                                    inaccuracy, error, or incompleteness in the Content.</p>
+
+                                                <p class="special-text" style="font-size: 1.1em;">3. Lawful purposes</p>
+
+                                                <p>You may use the Site and Service for lawful purposes only. You agree
+                                                    to use the Site for legitimate, non-commercial purposes only. You
+                                                    shall not post or transmit through the Site any material which
+                                                    violates or infringes the rights of others, or which is threatening,
+                                                    abusive, defamatory, libelous, invasive of privacy or publicity
+                                                    rights, vulgar, obscene, profane, or otherwise objectionable,
+                                                    contains injurious formulas, recipes, or instructions, which
+                                                    encourages conduct that would constitute a criminal offense, give
+                                                    rise to civil liability, or otherwise violate any law.</p>
+
+                                                <p class="special-text" style="font-size: 1.1em;">4. Changed terms</p>
+
+                                                <p>We may at any time amend these Terms and Conditions. Such amendments
+                                                    are effective immediately upon notice to you by us posting the new
+                                                    Terms and Conditions on this Site. Any use of the Site or Service by
+                                                    you after being notified means you accept these amendments. We
+                                                    reserve the right to update any portion of our Site and Service,
+                                                    including these Terms and Conditions, at any time. We will post the
+                                                    most recent versions to the Site and list the effective dates on the
+                                                    pages of our Terms and Conditions.</p>
+
+                                                <p class="special-text" style="font-size: 1.1em;">5. Third party
+                                                    resources</p>
+
+                                                <p>The Site and the Service contain links to third party websites and
+                                                    resources. You acknowledge and agree that we are not responsible or
+                                                    liable for the availability, accuracy, content, or policies of third
+                                                    party websites or resources. Links to such websites or resources do
+                                                    not imply any endorsement by or affiliation with Caitlin Jane
+                                                    Calligraphy. You acknowledge sole responsibility for and assume all
+                                                    risk arising from your use of any such websites or resources.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--submit button-->
+                                <button type="submit" ng-disabled="contact.$invalid" onclick="location.href='#'">Contact
+                                    Us</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--map-->
+                    <div
+                        class="col-xxl-6 col-xl-6 col-lg-6 d-flex flex-column d-flex align-items-center d-flex justify-content-center map">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1326.9415508712505!2d106.66561782549367!3d10.78649403115769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752edac37c5025%3A0xd5fab66e51e1049d!2sFPT%20Arena%20Multimedia!5e0!3m2!1svi!2s!4v1688563577552!5m2!1svi!2s"
+                            width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        <div class="d-flex align-items-center d-flex justify-content-start w-100 mt-4">
+                            <button type="submit"
+                                onclick="location.href='https://www.google.com/maps/dir//FPT+Arena+Multimedia+590+%C4%90.+C%C3%A1ch+M%E1%BA%A1ng+Th%C3%A1ng+8+Ph%C6%B0%E1%BB%9Dng+11+Qu%E1%BA%ADn+3,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.7866489,106.6663127,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x31752edac37c5025:0xd5fab66e51e1049d!2m2!1d106.6663127!2d10.7866489?entry=ttu'">Get
+                                Direction</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here" required>
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                        abc@abc.com</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", ["ngMessages"]);
+
+
+
+
+
+
+</script>
+
+</html>

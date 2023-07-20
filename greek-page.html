@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Calligraphy - Greek Calligraphy</title>
+
+    <!--jQuery.min.js-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap.min.js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
+    <!--Angular.min.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+    <!--Angular-messages.min.js - messages module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+
+    <!--Owl Carousel.min.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <!--icon web-->
+    <link rel="icon" type="image/png" sizes="256x256" href="image/icon.png">
+</head>
+
+<body ng-app="myApp"> <!--IMPORTANT NG-APP-->
+
+    <!--MENU-->
+    <div class="container-fluid sticky-top navigatebar">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid menu">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
+                    <img src="image/logo.png" alt="" class="img-fluid">
+                </a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-content">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-xxl-9 col-xl-9 col-lg-10" id="menu-content">
+                    <ul class="navbar-nav d-flex justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="calligraphy-page.html">Calligraphy</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Categories
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="arabic-page.html">Arabic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="east-asian-page.html">East Asian</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Greek</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="indic-page.html">Indic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="western-page.html">Western</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" id="sub-menu-content">
+                                Learn
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="#sub-menu-content">
+                                <li>
+                                    <a class="dropdown-item" href="learn-basic-page.html">Basic</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-intermediate.html">Intermediate</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="learn-advanced.html">Advanced</a>
+                                </li>
+                        </li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-page.html">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-page.html">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feedback</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!--SECTION-->
+    <section class="container-fluid start">
+
+        <!--CONTENT-->
+        <div class="row d-flex align-items-center d-flex justify-content-center">
+            <!--content-left-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex align-items-center d-flex justify-content-end">
+                        <img src="image/greek-page/greek-calligraphy-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-start">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>THE HISTORY OF GREEK CALLIGRAPHY</h2>
+
+                            <p>Greek alphabet, writing system that was developed in Greece about 1000 BCE. It is the
+                                direct or indirect ancestor of all modern European alphabets. Derived from the North
+                                Semitic alphabet via that of the Phoenicians, the Greek alphabet was modified to make it
+                                more efficient and accurate for writing a non-Semitic language by the addition of
+                                several new letters and the modification or dropping of several others. Most important,
+                                some of the symbols of the Semitic alphabet, which represented only consonants, were
+                                made to represent vowels: the Semitic consonants ʾalef, he, yod, ʿayin, and vav became
+                                the Greek letters alpha, epsilon, iota, omicron, and upsilon, representing the vowels a,
+                                e, i, o, and u, respectively. The addition of symbols for the vowel sounds greatly
+                                increased the accuracy and legibility of the writing system for non-Semitic languages.
+                            </p>
+
+                            <p>Before the 5th century BCE the Greek alphabet could be divided into two principal
+                                branches: the Ionic (eastern) and the Chalcidian (western). Differences between the two
+                                branches were minor. The Chalcidian alphabet probably gave rise to the Etruscan alphabet
+                                of Italy in the 8th century BCE and hence indirectly to the other Italic alphabets,
+                                including the Latin alphabet, which is now used for most European languages. In 403 BCE,
+                                however, Athens officially adopted the Ionic alphabet as written in Miletus, and in the
+                                next 50 years almost all local Greek alphabets, including the Chalcidian, were replaced
+                                by the Ionic script, which thus became the Classical Greek alphabet.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--content-right-->
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-end">
+                        <div
+                            class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
+                            <h2>GREEK ALPHABET</h2>
+
+                            <p class="special-text" style="font-size: 1.5em;">Greek Majuscule:</p>
+
+                            <p>It may be surprising to know that the printed Greek found in textbooks and Greek New
+                                Testaments looks considerably different than the Greek penned by scribes more than a
+                                millennium ago. This handwritten Greek was produced in two stages and two distinctly
+                                different forms. These forms are known today as “majuscule” and “minuscule“. Majuscule
+                                Greek was written in a bilinear format, or what we might consider capital letters, with
+                                the top of each letter reaching to an imaginary, overhead ruling line and the base of
+                                the letter resting on the lower ruling line. These letters were also written in scriptio
+                                continua—meaning without spaces between words—with separate strokes and no connecting
+                                points between each letter.</p>
+
+                            <p>Papyri written in this form of Greek exist from as early as the fourth century BCE and
+                                continue into the ninth century. This style of writing likely evolved from the carving
+                                of letters into stone. Because such a plentiful written record exists historians know
+                                about the social, economic, and literary culture of Ancient Greece. New Testament texts
+                                were also first written in this form of Greek with fragmentary papyri dating as early as
+                                the third century CE. By the fourth century, the script used in the majority of New
+                                Testament papyri was refined to form a “biblical majuscule“. This was an elegant script
+                                with careful attention paid to the sizing and placement of the letters and allowed the
+                                biblical text to be produced in a true “literary” style. This script is best seen in the
+                                great codices of the fourth and fifth centuries, like Codex Vaticanus. A literary
+                                majuscule such as this was used for books to be read or displayed, while a more
+                                rudimentary form continued to be used for administrative documents.</p>
+
+                            <p>From the fourth century to the ninth, the majuscule script dominated the literary
+                                landscape of Greek culture. However, as the years progressed a more “cursive” form of
+                                the script began to take shape, originating in the administrative documents of the fifth
+                                and sixth centuries. This new script was advantageous in that it allowed documents to be
+                                written with greater speed but disadvantageous in that it reduced the legibility of the
+                                text. Just as the Greek majuscule script underwent centuries of refinement before it
+                                would produce the admirable literary form of Codex Vaticanus and others, this cursive
+                                majuscule began to evolve into what would eventually become the predominant literary
+                                script for the Geek speaking world up to the era of the printing press: the Greek
+                                minuscule script.</p>
+
+                            <p class="special-text" style="font-size: 1.5em;">Greek Minuscule:</p>
+
+                            <p>While the majuscule was written in a bilinear mode, the minuscule adopted a quadrilinear
+                                format, placing letters along an imaginary baseline and extending them to the imaginary
+                                top line, but also creating forms that only reached a midline and some that extended
+                                below the baseline. It also brought with it the curious feature known as “ligatures”,
+                                wherein multiple letters are joined together in such a way as to blur their individual
+                                identity but save space on the page. Additionally, these letters were written with
+                                rounded edges and connecting lines and introduced spacing between words, though not as
+                                consistently as we might see in English texts. The majority of New Testament manuscripts
+                                are written in this style of Greek handwriting.</p>
+
+                            <p>Early forms of these smaller, cursive letters are found in the administrative papyri,
+                                invading more and more of the page into the seventh century. By the eighth century,
+                                writing exercises for school children contain both majuscule and minuscule letters, but,
+                                just as was true of majuscule, this rudimentary minuscule was not fit for use in
+                                literary works—especially not sacred ones. The majuscule script, as it relates to the
+                                New Testament, had developed an almost sacral identity. It was the mode for transmitting
+                                holy writ and could not be usurped easily. In the ninth century, a monastery known as
+                                the Stoudios—led by its influential abbot Theodore—produced the first literary minuscule
+                                script, now known as the Stoudite minuscule. This script was used to write the oldest
+                                dated New Testament manuscript, Petrop. Gr. 219, or the “Uspenski Gospels,” in 835 CE.
+                            </p>
+
+                            <p>This manuscript was a four-gospel codex written in a remarkably precise minuscule form
+                                without the aid of ruling lines on each page. The Stoudite scribes were renowned for
+                                their ability to write this form of script and housed a scriptorium so disciplined that
+                                identifying one scribe’s work from another’s is nearly impossible today. The
+                                introduction of the minuscule as a vehicle for the text of scripture opened the doors
+                                for its use throughout the culture. Though majuscule script was still employed for
+                                titles, introductory and conclusory comments, and even distinguishing biblical text from
+                                commentary, by the eleventh century the majuscule script had all but disappeared. The
+                                introduction of this new form of Greek writing brought with it the use of diacritical
+                                marking systems—used to distinguish pronunciation of words and separation of
+                                syllables—as well as punctuation for dividing sentences and clauses. Additionally, the
+                                first printed Greek New Testament adopted a later form of the minuscule script as its
+                                template, ligatures included.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex align-items-center d-flex justify-content-start">
+                        <img src="image/greek-page/greek-alphabet.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--sub banner-->
+        <div class="row align-items-center d-flex justify-content-center">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-center d-flex justify-content-center sub-banner-calligraphy">
+                <h1 class="my-3" style="text-align: center;">EXPLORING THE GREEK CALLIGRAPHY</h1>
+            </div>
+        </div>
+
+        <!--gallery-->
+        <div class="row final">
+            <!--row 1-->
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center">
+                <div class="row d-flex align-items-center d-flex justify-content-center">
+                    <div
+                        class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2">
+                        <!--img 1-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/greek-page/num1.png" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Later minuscule, 15th-century manuscript of Aristotle.</p>
+                            </div>
+                        </div>
+
+                        <!--img 2-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/greek-page/num2.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Axion estin (Greek: Ἄξιόν ἐστιν, Slavonic: Достóйно éсть, Dostóino
+                                    yesť), or It is Truly Meet</p>
+                            </div>
+                        </div>
+
+                        <!--img 3-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/greek-page/num3.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">Philodemus, Herculaneum Papyrus, 1005, 4.9–14</p>
+                            </div>
+                        </div>
+
+                        <!--img 4-->
+                        <div
+                            class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-center d-flex justify-content-start history-hover">
+                            <img src="image/greek-page/num4.jpg" alt="" class="img-fluid">
+                            <div class="history-text">
+                                <p class="title">I am with you each and every day until the end of the age (Matthew
+                                    28:20)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--FOOTER-->
+    <footer class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <p class="col-xxl-10 col-xl-10 col-lg-12 start-footer">QUICK CALLIGRAPHY</p>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <div class="row main-container1">
+                    <div class="col-xxl-2 col-xl-2 col-lg-4">
+                        <ul class="sub-container">
+                            <li><a href="about-page.html">About</a></li>
+                            <li><a href="calligraphy-page.html">Calligraphy</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-6 col-xl-6 col-lg-8">
+                        <ul class="sub-container">
+                            <li><a href="learn-basic-page.html">Learn <span>&#9900;</span> Basic</a></li>
+                            <li><a href="learn-intermediate.html">Learn <span>&#9900;</span> Intermediate</a></li>
+                            <li><a href="learn-advanced.html">Learn <span>&#9900;</span> Advanced</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                        <div class="form-container d-flex align-items-center">
+                            <form action="" name="subscribe">
+                                <label for="">Get the freshest Quick Calligraphy news</label><br />
+
+                                <div class="sub-form-container d-flex align-items-center">
+                                    <input type="email" name="mailid" ng-model="mMailid"
+                                        ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
+                                        placeholder="Your email here" required>
+                                    <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
+                                </div>
+
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                        abc@abc.com</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 icon-container">
+                <a href="https://www.facebook.com/">
+                    <img src="image/footer/icon-facebook.png" alt=""
+                        onmouseover="this.src='image/footer/icon-facebook-hover.png'"
+                        onmouseout="this.src='image/footer/icon-facebook.png'">
+                </a>
+
+                <a href="https://twitter.com/">
+                    <img src="image/footer/icon-twitter.png" alt=""
+                        onmouseover="this.src='image/footer/icon-twitter-hover.png'"
+                        onmouseout="this.src='image/footer/icon-twitter.png'">
+                </a>
+
+                <a href="https://mail.google.com/mail/u/0/#inbox">
+                    <img src="image/footer/icon-googleplus.png" alt=""
+                        onmouseover="this.src='image/footer/icon-googleplus-hover.png'"
+                        onmouseout="this.src='image/footer/icon-googleplus.png'">
+                </a>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
+                <a href="about-page.html">About</a>
+                <a href="contact-page.html">Contact</a>
+                <a href="">Feedback</a>
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+            <div class="col-xxl-10 col-xl-10 col-lg-12">
+                <p class="end-footer">&copy; 2023 Quick Calligraphy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+
+
+<script>
+    /*angularjs*/
+    let myApp = angular.module("myApp", []);
+
+</script>
+
+</html>
