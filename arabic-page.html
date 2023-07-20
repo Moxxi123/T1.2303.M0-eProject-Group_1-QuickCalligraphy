@@ -18,11 +18,11 @@
     <!--Angular.min.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 
+    <!--Angular-messages.min.js - messages module-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
+
     <!--Owl Carousel.min.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!--Aos.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
@@ -43,7 +43,7 @@
     <div class="container-fluid sticky-top navigatebar">
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid menu">
-                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="home.html">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
                     <img src="image/logo.png" alt="" class="img-fluid">
                 </a>
 
@@ -140,14 +140,14 @@
         <!--CONTENT-->
         <div class="row d-flex align-items-center d-flex justify-content-center">
             <!--content-left-->
-            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
-                data-aos="fade-right">
-                <div class="row d-flex align-items-center d-flex justify-content-center">
-                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex align-items-center d-flex justify-content-end">
                         <img src="image/arabic-page/arabic-calligraphy-2.png" alt="" class="img-fluid">
                     </div>
 
-                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-start">
                         <div
                             class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
                             <h2>THE HISTORY OF ARABIC CALLIGRAPHY</h2>
@@ -181,10 +181,10 @@
 
 
             <!--content-right-->
-            <div class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content"
-                data-aos="fade-left">
-                <div class="row d-flex align-items-center d-flex justify-content-center">
-                    <div class="col-xxl-8 col-xl-8 col-lg-6">
+            <div
+                class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-center d-flex justify-content-center sub-container-content">
+                <div class="row d-flex align-items-start d-flex justify-content-center">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 d-flex align-items-center d-flex justify-content-end">
                         <div
                             class="d-flex flex-column d-flex align-items-start d-flex justify-content-center content-calligraphy">
                             <h2>ARABIC ALPHABET</h2>
@@ -219,7 +219,7 @@
                         </div>
                     </div>
 
-                    <div class="col-xxl-4 col-xl-4 col-lg-6">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 d-flex align-items-center d-flex justify-content-start">
                         <img src="image/arabic-page/arabic-letterforms.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -237,8 +237,7 @@
         <!--gallery-->
         <div class="row final">
             <!--row 1-->
-            <div
-                class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex align-items-center d-flex justify-content-center">
                 <div class="row d-flex align-items-center d-flex justify-content-center">
                     <div
                         class="col-xxl-10 col-xl-10 col-lg-12 d-flex align-items-stretch d-flex justify-content-center gap-2">
@@ -321,12 +320,13 @@
                                 <div class="sub-form-container d-flex align-items-center">
                                     <input type="email" name="mailid" ng-model="mMailid"
                                         ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
-                                        placeholder="Your email here">
+                                        placeholder="Your email here" required>
                                     <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
                                 </div>
 
-                                <div class="error-container">
-                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                        abc@abc.com</div>
                                 </div>
                             </form>
                         </div>
@@ -383,15 +383,6 @@
     /*angularjs*/
     let myApp = angular.module("myApp", []);
 
-    /*Aos*/
-    $(function () {
-        AOS.init({
-            startEvent: "DOMContentLoaded",
-            offset: 500,
-            duration: 3000,
-            delay: 15,
-        });
-    });
 
 </script>
 

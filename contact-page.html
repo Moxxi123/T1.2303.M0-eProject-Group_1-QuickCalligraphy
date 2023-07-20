@@ -21,12 +21,8 @@
     <!--Angular-messages.min.js - messages module-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-messages.min.js"></script>
 
-
     <!--Owl Carousel.min.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-    <!--Aos.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 
@@ -47,7 +43,7 @@
     <div class="container-fluid sticky-top navigatebar">
         <nav class="navbar navbar-expand-xl">
             <div class="container-fluid menu">
-                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="home.html">
+                <a class="navbar-brand col-xxl-3 col-xl-3 col-lg-2 d-flex justify-content-end" href="index.html">
                     <img src="image/logo.png" alt="" class="img-fluid">
                 </a>
 
@@ -164,7 +160,8 @@
 
                         <p style="font-weight: 600; font-size: 1em; color: #cca01d;">093-131-3329</p>
 
-                        <p style="font-weight: 600; font-size: 1em; color: #cca01d; margin-bottom: 0px;">TRAINNING OFFICE
+                        <p style="font-weight: 600; font-size: 1em; color: #cca01d; margin-bottom: 0px;">TRAINNING
+                            OFFICE
                         </p>
 
                         <p style="font-weight: 600; font-size: 1em; color: #cca01d;">028-730-056-54</p>
@@ -202,12 +199,13 @@
             </div>
 
             <!--FORM AND MAP CONTENT-->
-            <div
-                class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center" style="background-color: #fff7e4;">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center"
+                style="background-color: #fff7e4;">
                 <div class="col-xxl-11 col-xl-11 col-lg-11 d-flex align-items-center d-flex justify-content-center gap-5"
                     style="margin-bottom: 50px; padding-top: 80px;">
                     <!--form-->
-                    <div class="col-xxl-5 col-xl-5 col-lg-5 d-flex flex-column d-flex align-items-center d-flex justify-content-center py-5">
+                    <div
+                        class="col-xxl-5 col-xl-5 col-lg-5 d-flex flex-column d-flex align-items-center d-flex justify-content-center py-5">
                         <div
                             class="col-xxl-11 col-xl-11 col-lg-11 d-flex align-items-center d-flex justify-content-center form-container-1">
                             <form action="" name="contact">
@@ -221,9 +219,12 @@
 
                                     <div ng-messages="contact.nameid.$error" ng-messages-multiple>
                                         <div ng-message="required"
-                                            ng-show="contact.nameid.$error.required && contact.nameid.$dirty" style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name is
+                                            ng-show="contact.nameid.$error.required && contact.nameid.$dirty"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name is
                                             Required.</div>
-                                        <div ng-message="pattern" style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name has format at least 1 character except for space.
+                                        <div ng-message="pattern"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Name has format
+                                            at least 1 character except for space.
                                         </div>
                                     </div>
                                 </div>
@@ -239,9 +240,12 @@
 
                                     <div ng-messages="contact.mail.$error" ng-messages-multiple>
                                         <div ng-message="required"
-                                            ng-show="contact.mail.$error.required && contact.mail.$dirty" style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email is
+                                            ng-show="contact.mail.$error.required && contact.mail.$dirty"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email is
                                             required.</div>
-                                        <div ng-message="pattern" style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email has format abc@abc.com</div>
+                                        <div ng-message="pattern"
+                                            style="margin: 20px 0 20px 0; font-weight: 600; color: red;">Email has
+                                            format abc@abc.com</div>
                                     </div>
                                 </div>
 
@@ -421,12 +425,13 @@
                                 <div class="sub-form-container d-flex align-items-center">
                                     <input type="email" name="mailid" ng-model="mMailid"
                                         ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
-                                        placeholder="Your email here">
+                                        placeholder="Your email here" required>
                                     <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
                                 </div>
 
-                                <div class="error-container">
-                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                        abc@abc.com</div>
                                 </div>
                             </form>
                         </div>
@@ -462,7 +467,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
                 <a href="about-page.html">About</a>
-                <a href="#">Contact</a>
+                <a href="contact-page.html">Contact</a>
                 <a href="">Feedback</a>
             </div>
         </div>

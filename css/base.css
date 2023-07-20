@@ -118,9 +118,9 @@ footer {
 /*2.1 footer header*/
 .start-footer {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     color: white;
-    margin: 30px 0 30px 0;
+    margin: 20px 0 15px 0;
 }
 
 /*2.2 main content 1*/
@@ -140,11 +140,9 @@ footer {
 
 .sub-container {
     padding: 0;
-    margin: 0 65px 0 0;
 }
 
 .sub-container a {
-    font-size: 1.2em;
     text-decoration: none;
     color: white;
 }
@@ -159,7 +157,6 @@ form {
 }
 
 .form-container label {
-    font-size: 1.2em;
     color: white;
 }
 
@@ -168,7 +165,7 @@ form {
 }
 
 .form-container input[type=email] {
-    width: 400px;
+    width: 350px;
     height: 40px;
     margin-right: 0;
     color: white;
@@ -197,7 +194,7 @@ form {
 
 /*2.3 icon*/
 .icon-container {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .icon-container a {
@@ -207,18 +204,18 @@ form {
 
 /*2.4 line hr*/
 footer hr {
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
     border-top: 1px solid white;
 }
 
 /*2.6.main content 2*/
 .main-container2 a {
-    font-weight: 0.8em;
+    font-size: 0.9em;
     text-decoration: none;
     color: white;
     border-right: thin solid white;
     padding-right: 15px;
-    margin: 30px 15px 20px 0;
+    margin: 0 15px 15px 0;
 }
 
 .main-container2 a:hover {
@@ -228,9 +225,9 @@ footer hr {
 
 /*2.5 end title*/
 .end-footer {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: white;
-    margin: 15px 0 30px 0;
+    margin: 15px 0 15px 0;
 }
 
 footer {
@@ -530,31 +527,30 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
-  }
-  
-  #list-img {
+}
+
+#list-img {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
-  }
-  
-  #list-img img {
-    margin-top: 8px;
+}
+
+#list-img img {
     vertical-align: middle;
     width: 100%;
-  }
-  
-  @media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 800px) {
     #list-img {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     #list-img {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
@@ -823,9 +819,8 @@ section .main-banner-learn-basic {
     color: gray;
 }
 
-
 /*9.2.slide bar*/
-#slider{
+#slider {
     margin-bottom: 50px;
 }
 
@@ -836,7 +831,8 @@ section .main-banner-learn-basic {
     margin: 0 0 20px 0;
 }
 
-.categories{
+/*9.2.1.sort bar*/
+.categories {
     padding-left: 10px;
     border: none;
     background: none;
@@ -846,23 +842,150 @@ section .main-banner-learn-basic {
     text-align: left;
 }
 
-.categories:hover{
+.categories:hover {
     background-color: white;
     color: black;
     border-radius: 20px;
     width: 100%;
     height: 40px;
     text-align: left;
+    margin-bottom: 30px;
 }
 
-.column{
+/*9.3 hide image*/
+.column {
     display: none;
 }
 
+/*9.4 show image*/
 .show {
     display: block;
 }
 
-  
+/*9.5.image overlay*/
+.column {
+    position: relative;
+    margin-bottom: 8px;
+}
 
+.img-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0
+}
 
+.img-icon:hover {
+    opacity: 1
+}
+
+.img-icon .img-icon-view {
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.img-icon .img-icon-love {
+    padding-right: 20px;
+    margin-bottom: 5px;
+}
+
+/*9.5.1.button love*/
+.btn-love {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*9.5.2.count span*/
+.img-icon span {
+    padding-top: 2px;
+    margin: 0 5px 0 5px;
+    color: white;
+}
+
+/*9.6.image modal*/
+/*9.6.1.modal (background)*/
+.modal-1 {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*9.6.2.modal content*/
+.modal-content-1 {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: fit-content;
+    max-width: 800px;
+    padding: 5px;
+    text-align: center;
+}
+
+/*9.6.2.1.close button*/
+.close {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*9.6.2.2.image slide*/
+.mySlides-1 {
+    display: none;
+}
+
+/*9.6.2.3.next/previous button*/
+.next-previous-button {
+    cursor: pointer;
+    position: absolute;
+    top: calc(50% - 0px);
+    width: 100%;
+    opacity: 0.3;
+}
+
+.next-previous-button:hover {
+    opacity: 1;
+}
+
+/*9.6.2.4.number text*/
+.numbertext {
+    color: white;
+}
+
+/*100% image width on smaller screens */
+@media only screen and (max-width: 700px) {
+    .modal-content-1 {
+        width: 100%;
+    }
+
+    .prev,
+    .next,
+    .numbertext {
+        font-size: 14px;
+    }
+}
