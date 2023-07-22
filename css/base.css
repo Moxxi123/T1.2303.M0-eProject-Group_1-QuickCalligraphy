@@ -59,6 +59,9 @@ h2 {
     outline: none;
 }
 
+
+
+
 /*1. ---MENU---*/
 .navigatebar {
     padding: 0 4px 0 4px;
@@ -693,13 +696,12 @@ section .main-banner-learn-basic {
 /*8.2 form contact*/
 
 .form-container-1 label {
-    margin-bottom: 20px;
-    font-size: 1.2em;
+    margin: 10px 0 10px 0;
     color: #056381;
 }
 
 .form-container-1 textarea {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background: none;
 }
 
@@ -709,7 +711,7 @@ section .main-banner-learn-basic {
 }
 
 .sub-form-container-1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -718,7 +720,6 @@ section .main-banner-learn-basic {
     padding-left: 10px;
     border: none;
     border-bottom: solid black;
-    font-size: 1.2em;
     background: none;
 }
 
@@ -726,7 +727,6 @@ section .main-banner-learn-basic {
     padding-left: 10px;
     border: none;
     border-bottom: solid black;
-    font-size: 1.2em;
 }
 
 /*8.2.1 change color when input*/
@@ -760,7 +760,7 @@ section .main-banner-learn-basic {
 
 /*8.2.5 button submit*/
 .form-container-1 button[type=submit] {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     height: 50px;
     color: white;
@@ -989,3 +989,59 @@ section .main-banner-learn-basic {
         font-size: 14px;
     }
 }
+
+
+
+
+
+/*10.FEEDBACK PAGE*/
+.feedback{
+    margin: 50px 0 50px 0;
+}
+
+.slider{
+    width: 98%;
+    overflow: hidden;
+    padding: 5px 5px;
+    margin-bottom: 50px;
+}
+
+.slider input{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 2px;
+    background-color:  #f0f4f7;
+    outline: none;
+}
+
+.slider input::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    border: thick solid #f0f4f7;
+    background-color: #033f52;
+    position: relative;
+}
+
+.rate{
+    padding: 0 0 0 5px;
+    margin: 0;
+    list-style: none;
+    height: 40px;
+    width: 98%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.rate li{
+    height: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+

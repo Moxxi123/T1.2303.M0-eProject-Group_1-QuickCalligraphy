@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Calligraphy - About Us</title>
+    <title>Quick Calligraphy - Feedback</title>
 
     <!--jQuery.min.js-->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
@@ -120,11 +120,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about-page.html">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="feedback-page.html">Feedback</a>
+                        <a class="nav-link" href="#">Feedback</a>
                     </li>
                     </ul>
                 </div>
@@ -137,96 +137,104 @@
 
     <!--SECTION-->
     <section class="container-fluid" style="padding: 0;">
-        <div class="masthead" style="background-image: url('image/about-page/main-banner-about-us.jpg');">
+        <!--Feedback-->
+        <div
+            class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center feedback">
+            <div class="col-xxl-11 col-xl-11 col-lg-11 d-flex align-items-start d-flex justify-content-center gap-2">
+                <!--img feedback-->
+                <div class="col-xxl-7 col-xl-7 col-lg-7 d-flex flex-column d-flex align-items-center d-flex justify-content-center px-3">
+                    <p style="font-weight: 600; font-size: 3em; color: #033f52; margin-bottom: 25px;">Feel
+                        free to drop us your feedback</p>
 
-            <div class="color-overlay d-flex justify-content-center align-items-center">
-                <div class="d-flex flex-column d-flex justify-content-center align-items-start">
-                    <p style="font-size: 2em; margin: 0">Who we are</p>
-                    <p style="font-size: 4em; margin: 0">Designers, thinkers & collaborators</p>
-                </div>
-            </div>
-        </div>
-
-        <div>
-            <div class="col-xxl-12 col-xl-12 col-lg-12 d-flex flex-column d-flex align-items-center d-flex justify-content-center"
-                style="background-color: #fff7e4;">
-                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-center d-flex justify-content-start"
-                    style="margin: 50px 0 20px 0;">
-                    <p style="font-weight: 600; font-size: 2em; color: #033f52;">We're a big team, comprised of pretty
-                        small teams, powered by unique minds</p>
+                    <img src="image/feedback-page/sub-banner-feedback.jpg" alt="" class="img-fluid">
                 </div>
 
-                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-start d-flex justify-content-start gap-5">
-                    <div class="col-xxl-5 col-xl-5 col-lg-5 d-flex align-items-center d-flex justify-content-start">
-                        <p>At Quick Calligraphy, we’ve seen again and again how the seemingly simple act of creating can
-                            be a force for growth, change, and discovery in people’s lives. We want to inspire and
-                            multiply the kind of creative exploration that furthers expression, learning and
-                            application.</p>
-                    </div>
-
-                    <div
-                        class="col-xxl-6 col-xl-6 col-lg-6 d-flex flex-column d-flex align-items-center d-flex justify-content-start">
-                        <p>We’re outcome focussed, not output focussed. We take a big picture approach by assessing your
-                            current situation, what the desired goal is, and develop ways to give you the best chance of
-                            achieving success.</p>
-
-                        <p>We’re realistic and resourceful. We work smart. That’s our role as creative consultants.</p>
-                    </div>
-                </div>
-
-                <div class="col-xxl-9 col-xl-9 col-lg-9 d-flex align-items-center d-flex justify-content-start"
-                    style="margin: 20px 0 20px 0;">
-                    <p style="font-weight: 600; font-size: 2em; color: #033f52;">Our team</p>
-                </div>
-
+                <!--form-->
                 <div
-                    class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-start d-flex justify-content-around final">
+                    class="col-xxl-5 col-xl-5 col-lg-5 d-flex flex-column d-flex align-items-start d-flex justify-content-center px-3 py-4">
                     <div
-                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
-                        <div
-                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
-                            <img src="image/about-page/avt1.jpg" alt="" style="width: 50%; height: auto;">
-                        </div>
-                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Mr.Tuan</p>
+                        class="col-xxl-10 col-xl-10 col-lg-10 d-flex align-items-start d-flex justify-content-center form-container-1">
+                        <form action="" name="feedback">
+                            <!--name-->
+                            <div
+                                class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                <label><strong>Name</strong></label>
 
-                        <p>Hi, my name is Tuan. Regarding the eProject song, I joined my brother's comedy. As a leader,
-                            I understand my responsibilities. With this eProject we did it as a practice rather than a
-                            test of ability. A process of learning and creating together what we have learned and
-                            created. Thank you school for the opportunity and trust.</p>
-                    </div>
+                                <input type="text" name="nameid" ng-model="mNameid" placeholder="Name*"
+                                    ng-pattern="/^\S.*$/" ng-trim="false" ng-maxlength="30" required>
 
-                    <div
-                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
-                        <div
-                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
-                            <img src="image/about-page/avt2.jpg" alt="" style="width: 50%; height: auto;">
-                        </div>
+                                <div ng-messages="feedback.nameid.$error" ng-messages-multiple>
+                                    <div ng-message="required"
+                                        ng-show="feedback.nameid.$error.required && feedback.nameid.$dirty"
+                                        style="margin: 10px 0 5px 0; font-weight: 600; color: red;">Name is
+                                        Required.</div>
+                                    <div ng-message="pattern"
+                                        style="margin: 10px 0 5px 0; font-weight: 600; color: red;">Name has format
+                                        at least 1 character except for space.
+                                    </div>
+                                </div>
+                            </div>
 
-                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Mr.Huy</p>
+                            <!--email-->
+                            <div
+                                class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                <label><strong>Email</strong></label>
 
-                        <p>Hi, my name is Huy. As a member participating in the eProject article with you. There are
-                            many limitations in knowledge, but thanks to that we have learned and understood more about
-                            HTML. For us, the difficulty is a test of each person's ability to find hidden secrets. We
-                            overcome and perfect more. Thank you teachers for creating conditions and opportunities.</p>
-                    </div>
+                                <input type="email" name="mail" ng-model="mMail" placeholder="Email*"
+                                    ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false" required>
 
-                    <div
-                        class="col-xxl-3 col-xl-3 col-lg-3 d-flex flex-column d-flex align-items-start d-flex justify-content-start">
-                        <div
-                            class="d-flex flex-column d-flex align-items-center d-flex justify-content-center w-100 mb-5">
-                            <img src="image/about-page/avt3.jpg" alt="" style="width: 50%; height: auto;">
-                        </div>
+                                <div ng-messages="feedback.mail.$error" ng-messages-multiple>
+                                    <div ng-message="required"
+                                        ng-show="feedback.mail.$error.required && feedback.mail.$dirty"
+                                        style="margin: 10px 0 5px 0; font-weight: 600; color: red;">Email is
+                                        required.</div>
+                                    <div ng-message="pattern"
+                                        style="margin: 10px 0 5px 0; font-weight: 600; color: red;">Email has
+                                        format abc@abc.com</div>
+                                </div>
+                            </div>
 
-                        <p style="font-weight: 600; font-size: 1.2em; color: #033f52;">Ms.Nhung</p>
+                            <!--range slider-->
+                            <div class="d-flex flex-column d-flex align-items-start d-flex justify-content-center range-slider">
+                            <p style="font-weight: 600; color: #056381; margin-bottom: 25px;">How satisfied are you with the design of our website?</p>   
+                                <div class="slider">
+                                    <ul class="rate">
+                                        <li>0</li>
+                                        <li>1</li>
+                                        <li>2</li>
+                                        <li>3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                    </ul>
+                                    <input type="range" min="0" max="5" value="5" step="1" list="rate">
+                                    <div class="d-flex align-items-center d-flex justify-content-between mt-3">
+                                        <p style="font-size: 0.8em; color: black;">Not at all likely</p>
 
-                        <p>Hi, I'm Nhung. Currently a student at FPT Aptech. My two brothers and I participated in the
-                            school's eProject. I am grateful for the eProject that the school set out for us. There were
-                            difficulties in terms of knowledge and time, but we tried to perfect and create a website of
-                            our own. Thank you, teachers and school for creating conditions.</p>
+                                        <p style="font-size: 0.8em; color: black;">Extremely likely</p>
+                                    </div>
+                                </div> 
+                            </div>
+
+                            <!--text box-->
+                            <div
+                                class="d-flex flex-column d-flex align-items-start d-flex justify-content-center sub-form-container-1">
+                                <textarea placeholder="Please tell us your reasons for giving this score here..."
+                                    rows="4" style="width: 100%; background-color: #f0f4f7;"></textarea>
+
+                            </div>
+
+                            <!--submit button-->
+                            <button type="submit" ng-disabled="feedback.$invalid" onclick="location.href='#'">Send
+                                Feedback</button>
+
+                        </form>
                     </div>
                 </div>
+
+
             </div>
         </div>
+
     </section>
 
 
@@ -310,9 +318,9 @@
 
         <div class="row d-flex justify-content-center">
             <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
-                <a href="#">About</a>
+                <a href="about-page.html">About</a>
                 <a href="contact-page.html">Contact</a>
-                <a href="feedback-page.html">Feedback</a>
+                <a href="#">Feedback</a>
             </div>
         </div>
 

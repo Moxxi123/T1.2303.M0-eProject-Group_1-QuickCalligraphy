@@ -123,7 +123,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Feedback</a>
+                        <a class="nav-link" href="feedback-page.html">Feedback</a>
                     </li>
                     </ul>
                 </div>
@@ -374,12 +374,15 @@
                                 <div class="sub-form-container d-flex align-items-center">
                                     <input type="email" name="mailid" ng-model="mMailid"
                                         ng-pattern="/^[a-z0-9\-_\.]+@([a-z0-9]+\.)+[a-z]{2,3}$/" ng-trim="false"
-                                        placeholder="Your email here">
+                                        placeholder="Your email here" required>
                                     <input type="submit" value="Subscribe" ng-disabled="subscribe.$invalid">
                                 </div>
 
-                                <div class="error-container">
-                                    <span ng-show="subscribe.mailid.$invalid">*Email has format abc@abc.com</span>
+                                <div class="error-container" ng-messages="subscribe.mailid.$error">
+                                    <div ng-message="pattern"
+                                        ng-show="subscribe.mailid.$error.pattern && subscribe.mailid.$dirty">Email has
+                                        format
+                                        abc@abc.com</div>
                                 </div>
                             </form>
                         </div>
@@ -416,7 +419,7 @@
             <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
                 <a href="about-page.html">About</a>
                 <a href="contact-page.html">Contact</a>
-                <a href="">Feedback</a>
+                <a href="feedback-page.html">Feedback</a>
             </div>
         </div>
 
@@ -434,7 +437,7 @@
 
 <script>
     /*angularjs*/
-    let myApp = angular.module("myApp", []);
+    let myApp = angular.module("myApp", ["ngMessages"]);
 
 </script>
 

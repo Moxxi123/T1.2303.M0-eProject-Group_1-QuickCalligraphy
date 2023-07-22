@@ -123,7 +123,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Feedback</a>
+                        <a class="nav-link" href="feedback-page.html">Feedback</a>
                     </li>
                     </ul>
                 </div>
@@ -325,7 +325,9 @@
                                 </div>
 
                                 <div class="error-container" ng-messages="subscribe.mailid.$error">
-                                    <div ng-message="pattern" ng-show="subscribe.mailid.$dirty">Email has format
+                                    <div ng-message="pattern"
+                                        ng-show="subscribe.mailid.$error.pattern && subscribe.mailid.$dirty">Email has
+                                        format
                                         abc@abc.com</div>
                                 </div>
                             </form>
@@ -363,7 +365,7 @@
             <div class="col-xxl-10 col-xl-10 col-lg-12 main-container2">
                 <a href="about-page.html">About</a>
                 <a href="contact-page.html">Contact</a>
-                <a href="">Feedback</a>
+                <a href="feedback-page.html">Feedback</a>
             </div>
         </div>
 
@@ -381,7 +383,7 @@
 
 <script>
     /*angularjs*/
-    let myApp = angular.module("myApp", []);
+    let myApp = angular.module("myApp", ["ngMessages"]);
 
 
 </script>
