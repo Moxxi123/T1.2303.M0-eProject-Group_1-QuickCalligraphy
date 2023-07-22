@@ -273,7 +273,7 @@
                     <!--header-->
                     <div
                         class="col-xxl-9 col-xl-9 col-lg-12 d-flex align-items-center d-flex justify-content-center slider-header">
-                        <h1>THE BASIC CALLIGRAPHY STROKES</h1>
+                        <h1 class="mb-0">THE BASIC CALLIGRAPHY STROKES</h1>
                     </div>
 
                     <!--center text-->
@@ -551,6 +551,26 @@
 <script>
     /*angularjs*/
     let myApp = angular.module("myApp", ["ngMessages"]);
+
+    /*Owl Carousel*/
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 3500,
+        autoplaySpeed: 1500,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
 
 
 </script>
