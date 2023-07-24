@@ -12,9 +12,9 @@ Project title: QUICK CALLIGRAPHY - the learning calligraphy website
 
          Vu Minh Tuan (tuanvmts2302018@fpt.edu.vn) Student1459120
 
-         Bui Thi Nhung (nhungbtt1s2302041@fpt.edu.vn) Student1225647
+         Bui Thi Nhung (nhungbtt1s2302041@fpt.edu.vn) Student1459130
          
-         Chu Quoc Huy (huycqt1s2302038@fpt.edu.vn) Student1235029
+         Chu Quoc Huy (huycqt1s2302038@fpt.edu.vn) Student1459125
 ============================
 
 GitHub report link: https://github.com/Moxxi123/T1.2303.M0-eProject-Group_1-QuickCalligraphy/tree/main/Documentation
